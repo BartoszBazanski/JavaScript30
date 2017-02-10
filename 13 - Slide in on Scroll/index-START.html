@@ -58,6 +58,15 @@
       };
     }
 
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    function checkSlide(event) {
+        sliderImages.forEach(sliderImage => {
+            const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        });
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide));
   </script>
 
   <style>
