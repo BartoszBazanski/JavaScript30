@@ -103,7 +103,27 @@
     </div>
   </div>
 
-<script>
-</script>
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        let lastCheckbox;
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('click', checkboxHandler);
+        });
+
+        function checkboxHandler(event) {
+            let inBetween = false;
+            if(event.shiftKey && this.checked) {
+                checkboxes.forEach(checkbox => {
+                    if(checkbox === this || checkbox === lastCheckbox) {
+                        inBetween = !inBetween;
+                    }
+                    if(inBetween) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
+            lastCheckbox = this;
+        }
+    </script>
 </body>
 </html>
