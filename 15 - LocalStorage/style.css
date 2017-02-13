@@ -76,3 +76,14 @@
       outline:0;
       border:1px solid rgba(0,0,0,0.1);
     }
+    #controlls {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 13px;
+    }
+    .button {
+        flex: 1;
+        padding:10px 5px;
+        outline:0;
+        border:1px solid rgba(0,0,0,0.1);
+    }
