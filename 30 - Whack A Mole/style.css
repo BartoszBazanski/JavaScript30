@@ -21,6 +21,27 @@ h1 {
   margin-bottom: 0;
 }
 
+#start-button {
+    padding: 8px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.m-lr-auto {
+    margin: 0 auto;
+}
+
+.no-m {
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+.fs-30 {
+    font-size: 30px;
+}
+
 .score {
   background:rgba(255,255,255,0.2);
   padding:0 3rem;
